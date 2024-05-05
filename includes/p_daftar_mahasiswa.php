@@ -145,11 +145,6 @@
 				  <td>Tanggal Update:</td>
 				  <td><?=$data[$i][6]?></td>
 				</tr>
-				<tr>
-				  <td>Jurusan:</td>
-				  <td><?=$data[$i][10]?></td>
-				</tr>
-				
 			  </tbody>
 			</table>
 		</div>
@@ -168,7 +163,7 @@
 <div class="modal hide fade" id="modalEdit<?=$i?>" tabindex="-1" role="dialog" aria-labelledby="modalEdit<?=$i?>Label" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h4 id="modalEdit<?=$i?>">Edit Petugas</h4>
+    <h4 id="modalEdit<?=$i?>">Edit Mahasiswa</h4>
   </div>
   <div class="modal-body">
       <div class="row-fluid">
@@ -185,7 +180,7 @@
 			  <input name="password" type="password" class="span12" value="">
 			</label>
 			<label><p class="title">Email</p>
-			  <input name="email" type="text" class="span12" value="<?=$data[$i][4]?>">
+			  <input name="email" type="email" class="span12" value="<?=$data[$i][4]?>">
 			</label>
 			<label><p class="title">Tempat Lahir</p>
 			  <input name="tpl" type="text" class="span12" value="<?=$data[$i][7]?>">
@@ -195,12 +190,6 @@
 			</label>
 			<label><p class="title">Alamat</p>
 			  <input name="alamat" type="text" class="span12" value="<?=$data[$i][7]?>">
-			</label>
-			<label><p class="title">Jurusan</p>
-			  <input name="jurusan" type="text" class="span12" value="<?=$data[$i][11]?>" required="required">
-			</label>
-			<label><p class="title">Gambar</p>
-				<input class="btn btn-success" type="file" name="image">
 			</label>
 		</div>
 	  </div>
@@ -218,38 +207,32 @@
 <div class="modal hide fade" id="modalTambah" tabindex="-1" role="dialog" aria-labelledby="modalTambahLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h4 id="modalTambah">Mahasiswa</h4>
+    <h4 id="modalTambah">Tambah Mahasiswa</h4>
   </div>
   <div class="modal-body">
       <div class="row-fluid">
 		<input type="hidden" name="tum" id="tum">
 		<div>
 			<label><p class="title">Nama</p>
-			  <input name="nama" type="text" class="span12" value="" required="required">
+			  <input name="nama" type="text" class="span12" value="">
 			</label>
 			<label><p class="title">Username</p>
-			  <input name="username" type="text" class="span12" value="" required="required">
+			  <input name="username" type="text" class="span12" value="">
 			</label>
 			<label><p class="title">Password</p>
-			  <input name="password" type="password" class="span12" value="" required="required">
+			  <input name="password" type="password" class="span12" value="">
 			</label>
 			<label><p class="title">Email</p>
-			  <input name="email" type="text" class="span12" value="" required="required">
+			  <input name="email" type="email" class="span12" value="">
 			</label>
 			<label><p class="title">Tempat Lahir</p>
-			  <input name="tpl" type="text" class="span12" value="" required="required">
+			  <input name="tpl" type="text" class="span12" value="">
 			</label>
 			<label><p class="title">Tanggal Lahir</p>
-			  <input name="ttl" type="text" class="span12 date" value="" required="required">
+			  <input name="ttl" type="text" class="span12 date" value="">
 			</label>
 			<label><p class="title">Alamat</p>
-			  <input name="alamat" type="text" class="span12" value="" required="required">
-			</label>
-			<label><p class="title">Jurusan</p>
-			  <input name="jurusan" type="text" class="span12" value="" required="required">
-			</label>
-			<label><p class="title">Gambar</p>
-				<input class="btn btn-success" type="file" name="image">
+			  <input name="alamat" type="text" class="span12" value="">
 			</label>
 		</div>
 	  </div>
