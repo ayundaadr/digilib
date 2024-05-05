@@ -99,7 +99,7 @@
 		<input type="hidden" name="tk" id="tk" value=1>
 		<div>
 			<label><p class="title">Nama Kategori</p>
-			  <input name="namaKategori" type="text" class="span12" value="<?=$data[$i][1]?>" autofocus>
+			  <input name="namaKategori" type="text" class="span12" value="<?=$data[$i][1]?>" required>
 			</label>
 		</div>
 	  </div>
